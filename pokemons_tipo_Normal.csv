@@ -1,0 +1,25 @@
+Número,Nome,Tipos
+16,Pidgey,"['Normal', 'Flying']"
+17,Pidgeotto,"['Normal', 'Flying']"
+18,Pidgeot,"['Normal', 'Flying']"
+19,Rattata,['Normal']
+20,Raticate,['Normal']
+21,Spearow,"['Normal', 'Flying']"
+22,Fearow,"['Normal', 'Flying']"
+35,Clefairy,['Normal']
+36,Clefable,['Normal']
+39,Jigglypuff,['Normal']
+40,Wigglytuff,['Normal']
+52,Meowth,['Normal']
+53,Persian,['Normal']
+83,Farfetch'd,"['Normal', 'Flying']"
+84,Doduo,"['Normal', 'Flying']"
+85,Dodrio,"['Normal', 'Flying']"
+108,Lickitung,['Normal']
+113,Chansey,['Normal']
+115,Kangaskhan,['Normal']
+128,Tauros,['Normal']
+132,Ditto,['Normal']
+133,Eevee,['Normal']
+137,Porygon,['Normal']
+143,Snorlax,['Normal']

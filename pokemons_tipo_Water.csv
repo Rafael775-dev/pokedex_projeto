@@ -1,0 +1,33 @@
+Número,Nome,Tipos
+7,Squirtle,['Water']
+8,Wartortle,['Water']
+9,Blastoise,['Water']
+54,Psyduck,['Water']
+55,Golduck,['Water']
+60,Poliwag,['Water']
+61,Poliwhirl,['Water']
+62,Poliwrath,"['Water', 'Fighting']"
+72,Tentacool,"['Water', 'Poison']"
+73,Tentacruel,"['Water', 'Poison']"
+79,Slowpoke,"['Water', 'Psychic']"
+80,Slowbro,"['Water', 'Psychic']"
+86,Seel,['Water']
+87,Dewgong,"['Water', 'Ice']"
+90,Shellder,['Water']
+91,Cloyster,"['Water', 'Ice']"
+98,Krabby,['Water']
+99,Kingler,['Water']
+116,Horsea,['Water']
+117,Seadra,['Water']
+118,Goldeen,['Water']
+119,Seaking,['Water']
+120,Staryu,['Water']
+121,Starmie,"['Water', 'Psychic']"
+129,Magikarp,['Water']
+130,Gyarados,"['Water', 'Flying']"
+131,Lapras,"['Water', 'Ice']"
+134,Vaporeon,['Water']
+138,Omanyte,"['Rock', 'Water']"
+139,Omastar,"['Rock', 'Water']"
+140,Kabuto,"['Rock', 'Water']"
+141,Kabutops,"['Rock', 'Water']"

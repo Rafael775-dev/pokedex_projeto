@@ -1,0 +1,34 @@
+Número,Nome,Tipos
+1,Bulbasaur,"['Grass', 'Poison']"
+2,Ivysaur,"['Grass', 'Poison']"
+3,Venusaur,"['Grass', 'Poison']"
+13,Weedle,"['Bug', 'Poison']"
+14,Kakuna,"['Bug', 'Poison']"
+15,Beedrill,"['Bug', 'Poison']"
+23,Ekans,['Poison']
+24,Arbok,['Poison']
+29,Nidoran♀,['Poison']
+30,Nidorina,['Poison']
+31,Nidoqueen,"['Poison', 'Ground']"
+32,Nidoran♂,['Poison']
+33,Nidorino,['Poison']
+34,Nidoking,"['Poison', 'Ground']"
+41,Zubat,"['Poison', 'Flying']"
+42,Golbat,"['Poison', 'Flying']"
+43,Oddish,"['Grass', 'Poison']"
+44,Gloom,"['Grass', 'Poison']"
+45,Vileplume,"['Grass', 'Poison']"
+48,Venonat,"['Bug', 'Poison']"
+49,Venomoth,"['Bug', 'Poison']"
+69,Bellsprout,"['Grass', 'Poison']"
+70,Weepinbell,"['Grass', 'Poison']"
+71,Victreebel,"['Grass', 'Poison']"
+72,Tentacool,"['Water', 'Poison']"
+73,Tentacruel,"['Water', 'Poison']"
+88,Grimer,['Poison']
+89,Muk,['Poison']
+92,Gastly,"['Ghost', 'Poison']"
+93,Haunter,"['Ghost', 'Poison']"
+94,Gengar,"['Ghost', 'Poison']"
+109,Koffing,['Poison']
+110,Weezing,['Poison']

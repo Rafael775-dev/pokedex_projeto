@@ -1,0 +1,10 @@
+Número,Nome,Tipos
+25,Pikachu,['Electric']
+26,Raichu,['Electric']
+81,Magnemite,"['Electric', 'Steel']"
+82,Magneton,"['Electric', 'Steel']"
+100,Voltorb,['Electric']
+101,Electrode,['Electric']
+125,Electabuzz,['Electric']
+135,Jolteon,['Electric']
+145,Zapdos,"['Electric', 'Flying']"

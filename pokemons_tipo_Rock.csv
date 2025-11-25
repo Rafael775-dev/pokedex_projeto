@@ -1,0 +1,12 @@
+Número,Nome,Tipos
+74,Geodude,"['Rock', 'Ground']"
+75,Graveler,"['Rock', 'Ground']"
+76,Golem,"['Rock', 'Ground']"
+95,Onix,"['Rock', 'Ground']"
+111,Rhyhorn,"['Ground', 'Rock']"
+112,Rhydon,"['Ground', 'Rock']"
+138,Omanyte,"['Rock', 'Water']"
+139,Omastar,"['Rock', 'Water']"
+140,Kabuto,"['Rock', 'Water']"
+141,Kabutops,"['Rock', 'Water']"
+142,Aerodactyl,"['Rock', 'Flying']"

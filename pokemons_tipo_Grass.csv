@@ -1,0 +1,15 @@
+Número,Nome,Tipos
+1,Bulbasaur,"['Grass', 'Poison']"
+2,Ivysaur,"['Grass', 'Poison']"
+3,Venusaur,"['Grass', 'Poison']"
+43,Oddish,"['Grass', 'Poison']"
+44,Gloom,"['Grass', 'Poison']"
+45,Vileplume,"['Grass', 'Poison']"
+46,Paras,"['Bug', 'Grass']"
+47,Parasect,"['Bug', 'Grass']"
+69,Bellsprout,"['Grass', 'Poison']"
+70,Weepinbell,"['Grass', 'Poison']"
+71,Victreebel,"['Grass', 'Poison']"
+102,Exeggcute,"['Grass', 'Psychic']"
+103,Exeggutor,"['Grass', 'Psychic']"
+114,Tangela,['Grass']

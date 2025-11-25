@@ -1,0 +1,15 @@
+Número,Nome,Tipos
+27,Sandshrew,['Ground']
+28,Sandslash,['Ground']
+31,Nidoqueen,"['Poison', 'Ground']"
+34,Nidoking,"['Poison', 'Ground']"
+50,Diglett,['Ground']
+51,Dugtrio,['Ground']
+74,Geodude,"['Rock', 'Ground']"
+75,Graveler,"['Rock', 'Ground']"
+76,Golem,"['Rock', 'Ground']"
+95,Onix,"['Rock', 'Ground']"
+104,Cubone,['Ground']
+105,Marowak,['Ground']
+111,Rhyhorn,"['Ground', 'Rock']"
+112,Rhydon,"['Ground', 'Rock']"
