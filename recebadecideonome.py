@@ -12,13 +12,6 @@ with open("pokemons_1_150.csv", encoding="utf-8") as f:
     for linha in leitor:
         pokemons.append(linha)
 
-print("Digite '1' para mostrar toda a lista. ")
-print("Digite 'pk n' para ver o pokémon do número N, ex: (pk 2). ")
-print("Digite '2' para mostrar os pokémon separados por tipo ")
-print("Digite 'pkm tipo' para ver pokémon daquele tipo. ")
-print("Exemplo: 'pokm ghost'")
-print("Digite 'sair' para encerrar.\n")
-
 while True:
     print("Digite '1' para mostrar toda a lista. ")
     print("Digite 'pk n' para ver o pokémon do número N, ex: (pk 2). ")
@@ -38,6 +31,65 @@ while True:
         print()
         continue
 
+    if comando == "2":
+        for p in pokemons:
+            tipos = p["Tipos"].strip("[]").replace("'", "").split(", ")
+            if "Fire" in tipos:      #1
+                print("Tipo Fire (Fogo):")
+                print(p)
+            if "Grass" in tipos:      #2
+                print("Tipo Grass (Grama):")
+                print(p)
+            if "Water" in tipos:      #3
+                print("Tipo Water (Água):")
+                print(p)
+            if "Bug" in tipos:      #4
+                print("Tipo Bug (Inseto):")
+                print(p)
+            if "Flying" in tipos:      #5
+                print("Tipo Flying (Voador):")
+                print(p)
+            if "Poison" in tipos:      #6
+                print("Tipo Poison (Venenoso):")
+                print(p)
+            if "Fire" in tipos:      #7
+                print("Tipo fogo:")
+                print(p)
+            if "Fire" in tipos:      #8
+                print("Tipo fogo:")
+                print(p)
+            if "Fire" in tipos:     #9
+                print("Tipo fogo:")
+                print(p)
+            if "Fire" in tipos:     #10
+                print("Tipo fogo:")
+                print(p)
+            if "Fire" in tipos:     #11
+                print("Tipo fogo:")
+                print(p)
+            if "Fire" in tipos:     #12
+                print("Tipo fogo:")
+                print(p)
+            if "Fire" in tipos:     #13
+                print("Tipo fogo:")
+                print(p)
+            if "Fire" in tipos:     #14
+                print("Tipo fogo:")
+                print(p)
+            if "Fire" in tipos:     #15
+                print("Tipo fogo:")
+                print(p)
+            if "Fire" in tipos:     #16
+                print("Tipo fogo:")
+                print(p)
+            if "Fire" in tipos:     #17
+                print("Tipo fogo:")
+                print(p)
+            continue
+
+    
+
+
     # Buscar por número
     if comando.startswith("pk"):
         numero = comando.replace("pk", "").replace("pk", "").strip()
@@ -53,6 +105,8 @@ while True:
         else:
             print("Digite um número válido.\n")
         continue
+
+    
 
     # ---- NOVA FUNÇÃO: LISTAR POR TIPO ----
     if comando.startswith("pokm"):
