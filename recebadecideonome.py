@@ -8,45 +8,28 @@ with open("pokemons_1_150.csv", encoding="utf-8") as f:
     for linha in leitor:
         pokemons.append(linha)
 
-print("Digite 'todos os pokémon' para mostrar toda a lista.")
-print("Digite 'pokémon N' para ver o pokémon do número N (ex: pokémon 1).")
-print("Digite 'todos os pokémon de TIPO' para ver pokémon daquele tipo.")
-print("Exemplo: todos os pokémon de fire")
-print("Tipos existentes na pokédex:")
-print("Fire")
-print("Water")
-print("Grass")
-print("Bug")
-print("Eletric")
-print("Ground")
-print("Ice")
-print("Ghost")
-print("Psychic")
-print("Normal")
-print("Steel")
-print("Poison")
-print("Rock")
-print("Flying")
-print("Fighting")
-print("Dragon")
+print("Digite '1' para mostrar toda a lista de Pokémon.")
+print("Digite 'n N' para ver o pokémon número N (ex: n 1).")
+print("Digite 't tipo' para ver pokémon daquele tipo (ex: t fire).")
+print("Tipos: fire, water, grass, bug, electric, ground, ice, ghost, psychic, normal, steel, poison, rock, flying, fighting, dragon")
 print("Digite 'sair' para encerrar.\n")
 
 while True:
-    comando = input(">> ").strip().lower()
+    comando = input("Digite aqui >  ").strip().lower()
 
     if comando == "sair":
         break
 
     # Exibir lista inteira
-    if comando == "todos os pokémon":
+    if comando == "1":
         for p in pokemons:
             print(f"{p['Número']}, {p['Nome']}, {p['Tipos']}")
         print()
         continue
 
-    # Buscar por número
-    if comando.startswith("pokémon ") or comando.startswith("pokemon "):
-        numero = comando.replace("pokémon", "").replace("pokemon", "").strip()
+    # Buscar por número: n 25
+    if comando.startswith("n "):
+        numero = comando.split()[1]
 
         if numero.isdigit():
             numero = int(numero)
@@ -60,9 +43,9 @@ while True:
             print("Digite um número válido.\n")
         continue
 
-    # ---- NOVA FUNÇÃO: LISTAR POR TIPO ----
-    if comando.startswith("todos os pokémon de ") or comando.startswith("todos os pokemon de "):
-        tipo = comando.replace("todos os pokémon de", "").replace("todos os pokemon de", "").strip()
+    # ---- LISTAR POR TIPO: t fire ----
+    if comando.startswith("t "):
+        tipo = comando.split()[1]
 
         nome_arquivo = f"pokemons_tipo_{tipo}.csv"
 
@@ -82,4 +65,4 @@ while True:
         print()
         continue
 
-    print("Comando não reconhecido, digite um dos comandos da lista.\n")
+    print("Comando não reconhecido.\n")
