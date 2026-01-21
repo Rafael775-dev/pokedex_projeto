@@ -1,16 +1,12 @@
 import csv
 import os
 
-# =================================================
-# Limpar terminal
-# =================================================
+#Limpar terminal
 def limpar_tela():
     os.system("cls" if os.name == "nt" else "clear")
 
 
-# =================================================
-# Carregar Pokémon base
-# =================================================
+#Carregar Pokémon base
 def carregar_pokemons():
     try:
         with open("pokemons_1_150.csv", encoding="utf-8") as f:
@@ -25,28 +21,23 @@ def carregar_pokemons():
 
 pokemons = carregar_pokemons()
 
-# =================================================
-# Arquivo do time
-# =================================================
+
+#Arquivo do time
 ARQUIVO_TIME = "time_pokemon.csv"
 
 
-# =================================================
-# Criar arquivo do time
-# =================================================
+#Criar arquivo do time
 def criar_arquivo_time():
     try:
         if not os.path.exists(ARQUIVO_TIME):
             with open(ARQUIVO_TIME, "w", newline="", encoding="utf-8") as f:
                 escritor = csv.writer(f)
-                escritor.writerow(["Número", "Nome", "Tipos"])
+                escritor.writerow(["Número", "Nome", "Tipos"]) #escreve a primeira coluna
     except Exception as e:
         print("Erro ao criar arquivo do time:", e)
 
 
-# =================================================
-# Menu principal
-# =================================================
+#Menu principal
 def mostrar_menu():
     print("=== POKÉDEX FIRE RED ===")
     print("1 - Mostrar todos os Pokémon")
@@ -58,9 +49,7 @@ def mostrar_menu():
     print("sair - Encerrar\n")
 
 
-# =================================================
-# Montar time (loop contínuo)
-# =================================================
+#Montar time (loop contínuo)
 def montar_time():
     criar_arquivo_time()
 
@@ -122,9 +111,7 @@ def montar_time():
         input("Pressione ENTER para continuar...")
 
 
-# =================================================
-# Ver time
-# =================================================
+#Ver time
 def ver_time():
     if not os.path.exists(ARQUIVO_TIME):
         print("Você ainda não montou um time.")
@@ -140,10 +127,7 @@ def ver_time():
     except Exception as e:
         print("Erro ao ler o time:", e)
 
-
-# =================================================
 # Resetar time
-# =================================================
 def resetar_time():
     try:
         if os.path.exists(ARQUIVO_TIME):
@@ -155,9 +139,7 @@ def resetar_time():
         print("Erro ao apagar o time:", e)
 
 
-# =================================================
 # Loop principal
-# =================================================
 while True:
     limpar_tela()
     mostrar_menu()
@@ -174,7 +156,7 @@ while True:
         continue
 
     if comando.startswith("n "):
-        num = comando.split()[1]
+        num = comando.split()[1] #Segunda parte do comando pego
 
         if num.isdigit():
             num = int(num)
