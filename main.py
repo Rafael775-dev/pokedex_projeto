@@ -18,9 +18,20 @@ def carregar_pokemons():
         print("Erro ao carregar pokémons:", e)
         exit()
 
+def carregar_pokemonsdescri():
+    try:
+        with open("pokemon_fire_red_descricoes.csv", encoding="utf-8") as f:
+            return list(csv.DictReader(f))
+    except FileNotFoundError:
+        print("Arquivo pokemon_fire_red_descricoes.csv não encontrado.")
+        exit()
+    except Exception as e:
+        print("Erro ao carregar pokémons:", e)
+        exit()
 
 pokemons = carregar_pokemons()
 
+pokemonsdescri = carregar_pokemonsdescri()
 
 #Arquivo do time
 ARQUIVO_TIME = "time_pokemon.csv"
@@ -160,9 +171,9 @@ while True:
 
         if num.isdigit():
             num = int(num)
-            if 1 <= num <= len(pokemons):
-                p = pokemons[num - 1]
-                print(f"\n{p['Número']} - {p['Nome']} ({p['Tipos']})\n")
+            if 1 <= num <= len(pokemonsdescri):
+                p = pokemonsdescri[num - 1]
+                print(f"\n Número: {p['numero']} == {p['Nome']} \n Tipos:{p['Tipo 1']} {p['Tipo 2']} \n Altura/peso: {p['Altura']} m, Kg {p['Peso']} \n Descrição: '{p['Descrição']}' \n")
             else:
                 print("Número fora da Pokédex.")
         else:
