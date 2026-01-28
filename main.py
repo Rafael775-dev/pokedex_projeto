@@ -57,6 +57,7 @@ def mostrar_menu():
     print("time - Montar time de 10 Pokémon")
     print("ver_time - Ver time atual")
     print("reset_time - Apagar time")
+    print("Tipos: Bug, Dark, Dragon, Electric, Fighting, Fire, Flying, Ghost, Grass, Ground, Ice, Normal, Poison, Psychic, Rock, Steel e Water")
     print("sair - Encerrar\n")
 
 
